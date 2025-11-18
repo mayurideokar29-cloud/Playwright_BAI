@@ -1,10 +1,25 @@
 import { test, expect } from '@playwright/test';
+/*import fs from 'fs';
+
+// ⭐ Auto inject sessionStorage before each test
+test.beforeEach(async ({ page }) => {
+  const session = JSON.parse(fs.readFileSync('session.json', 'utf8'));
+
+  await page.goto('/');
+
+  await page.evaluate((session) => {
+    for (const key in session) {
+      sessionStorage.setItem(key, session[key]);
+    }
+  }, session);
+});*/
 
 test('Create project with unique name', async ({ page }) => {
   // --- Generate unique project name ---
   const projectName = `Test_${Date.now()}`;
 
   // --- Login ---
+  await page.goto('/');
   await page.goto('https://abs-testing.simulationhub.com/');
 
   await page.getByPlaceholder('Email').fill('mayuri.deokar@cctech.co.in');
