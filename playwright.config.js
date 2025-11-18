@@ -1,4 +1,3 @@
-// playwright.config.js
 import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
@@ -6,17 +5,18 @@ export default defineConfig({
 
   use: {
     baseURL: 'https://abs-testing.simulationhub.com/',
-    headless: false,
   },
 
   projects: [
     {
       name: 'setup',
-      testMatch: /auth\/login\.setup\.js/,
+      testMatch: /login\.setup\.js/,
     },
     {
       name: 'chromium',
-      use: { storageState: 'auth.json' },
+      use: {
+        storageState: 'auth.json',
+      },
       dependencies: ['setup'],
     },
   ],

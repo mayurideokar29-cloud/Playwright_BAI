@@ -7,10 +7,6 @@ test('Create floorplan in PDF2BIM with unique name', async ({ page }) => {
   // ---------- Login ----------
   await page.goto('https://abs-testing.simulationhub.com/');
 
-  await page.getByPlaceholder('Email').fill('mayuri.deokar@cctech.co.in');
-  await page.getByPlaceholder('Password').fill('Mayuri@29');
-  await page.getByRole('button', { name: 'Sign in' }).click();
-
   // ---------- Go to Office ----------
   await page.getByRole('button', { name: 'office Image Office' }).click();
 
