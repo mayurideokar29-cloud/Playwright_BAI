@@ -1,0 +1,138 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - button "buildings ai Logo" [ref=e7] [cursor=pointer]:
+        - img "buildings ai Logo" [ref=e8]
+      - generic [ref=e9]:
+        - menu [ref=e13]:
+          - generic "Dashboard" [ref=e14]:
+            - menuitem "home" [ref=e15] [cursor=pointer]:
+              - generic [ref=e17]: home
+          - generic "Project Details" [ref=e18]:
+            - menuitem "quick_reference" [ref=e19] [cursor=pointer]:
+              - generic [ref=e21]: quick_reference
+          - generic "Data Hub" [ref=e22]:
+            - menuitem "database" [ref=e23] [cursor=pointer]:
+              - generic [ref=e25]: database
+          - generic "Coming Soon" [ref=e26]:
+            - menuitem "mode_dual" [disabled]:
+              - generic:
+                - generic: mode_dual
+        - generic [ref=e27]:
+          - menu [ref=e30]:
+            - generic "2D Floorplan" [ref=e31]:
+              - menuitem "map" [ref=e32] [cursor=pointer]:
+                - generic [ref=e34]: map
+            - generic "Build" [ref=e35]:
+              - menuitem "domain" [ref=e36] [cursor=pointer]:
+                - generic [ref=e38]: domain
+            - generic "HVAC" [ref=e39]:
+              - menuitem "mode_fan" [ref=e40] [cursor=pointer]:
+                - generic [ref=e42]: mode_fan
+            - generic "Coming Soon" [ref=e43]:
+              - menuitem "vital_signs" [disabled]:
+                - generic:
+                  - generic: vital_signs
+          - menu [ref=e46]:
+            - generic "Load" [ref=e47]:
+              - menuitem "energy_program_time_used" [ref=e48] [cursor=pointer]:
+                - generic [ref=e50]: energy_program_time_used
+            - generic "Energy" [ref=e51]:
+              - menuitem "bolt" [ref=e52] [cursor=pointer]:
+                - generic [ref=e54]: bolt
+            - generic "Coming Soon" [ref=e55]:
+              - menuitem "emoji_language" [disabled]:
+                - generic:
+                  - generic: emoji_language
+            - generic "Coming Soon" [ref=e56]:
+              - menuitem "masks" [disabled]:
+                - generic:
+                  - generic: masks
+          - menu [ref=e59]:
+            - generic "Report Assistant" [ref=e60]:
+              - menuitem "network_intel_node" [ref=e61] [cursor=pointer]:
+                - generic [ref=e63]: network_intel_node
+            - generic "Coming Soon" [ref=e64]:
+              - menuitem "dataset_linked" [disabled]:
+                - generic:
+                  - generic: dataset_linked
+      - menu [ref=e68]:
+        - generic "Expand" [ref=e69]:
+          - menuitem "chevron_right" [ref=e70] [cursor=pointer]:
+            - generic [ref=e72]: chevron_right
+    - generic [ref=e73]:
+      - generic [ref=e76]:
+        - generic [ref=e77]:
+          - button "Mayuri-test-project" [disabled]:
+            - paragraph: Mayuri-test-project
+        - generic [ref=e80]:
+          - button "Help" [ref=e84] [cursor=pointer]:
+            - generic [ref=e85]: Help
+          - generic [ref=e87] [cursor=pointer]: notifications
+          - button "MD" [ref=e89] [cursor=pointer]:
+            - generic [ref=e91]: MD
+      - generic [ref=e95]:
+        - generic [ref=e97]:
+          - generic [ref=e99]:
+            - paragraph [ref=e101]: Create New Build Configuration
+            - generic [ref=e102]:
+              - generic [ref=e103]:
+                - paragraph [ref=e104]: Building Configuration Name
+                - generic [ref=e106]:
+                  - textbox "Select an option" [active] [ref=e107]: test-auto-1763465032212
+                  - group
+              - generic [ref=e108]:
+                - paragraph [ref=e109]:
+                  - text: Building Model
+                  - img [ref=e110] [cursor=pointer]
+                - generic [ref=e112]:
+                  - generic: Select an option
+                  - generic [ref=e113]:
+                    - combobox "Select an option test-auto-1763465032212" [ref=e114] [cursor=pointer]
+                    - textbox
+                    - img
+                    - group:
+                      - generic: Select an option
+              - generic [ref=e115]:
+                - paragraph [ref=e116]: Level of Detail
+                - generic [ref=e118]:
+                  - combobox "test-auto-1763465032212" [ref=e119] [cursor=pointer]: Detailed Study
+                  - textbox: detailed
+                  - img
+                  - group
+              - generic [ref=e120]:
+                - generic [ref=e121] [cursor=pointer]:
+                  - checkbox [ref=e122]
+                  - img [ref=e123]
+                - paragraph [ref=e125]: Align Building North with True North
+              - generic [ref=e126]:
+                - paragraph [ref=e127]: Adjust Building North
+                - generic [ref=e129]:
+                  - textbox [ref=e130]: "0"
+                  - generic [ref=e133]:
+                    - combobox "test-auto-1763465032212" [ref=e134] [cursor=pointer]: Clockwise
+                    - textbox: clockwise
+                    - img
+                    - group
+                  - group
+              - generic [ref=e135]:
+                - button "Create New Configuration" [disabled]
+          - generic [ref=e137]:
+            - paragraph [ref=e139]: Recent Build Configurations
+            - button "sync" [ref=e141] [cursor=pointer]:
+              - generic [ref=e142]: sync
+        - generic [ref=e220]:
+          - paragraph [ref=e222]: Build Configurations Details
+          - img "Build Configurations Details-image" [ref=e224]
+          - paragraph [ref=e226]: The Build Configurator module is the foundational tool that enables users to configure building models for simulation.
+          - paragraph [ref=e228]: Users can define materials, orientation, zoning, and space types on imported geometry from AutoCAD Architecture or floorspaceJS eliminating the need to recreate models.
+          - paragraph [ref=e230]: Designed for adaptability, the module allows models to transform seamlessly between detailed, conceptual, and schematic studies, making it ideal for early design exploration.
+          - paragraph [ref=e232]: To import geometries from AutoCAD Architecture, users can export using the “BuildingJSON Exporter” plugin, available on the Autodesk App Store
+    - alert [ref=e233]
+  - alert [ref=e234]: Buildings AI
+  - tooltip "Build":
+    - generic: Build
+```
